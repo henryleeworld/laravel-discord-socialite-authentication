@@ -1,4 +1,4 @@
-# Laravel 8 通過 OAuth 進行 Discord 身份驗證
+# Laravel 9 通過 OAuth 進行 Discord 身份驗證
 
 通過 OAuth 可以使用 Discord 帳戶登入網站，如此一來就不必費心記住使用者名稱和密碼。
 
@@ -20,9 +20,13 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來，例如：http://127.0.0.1:8000。
 - 你可以登入經由 `/login` 來進行登入，點選「使用 Discord 登入」以使用 Discord 帳戶登入網站。
@@ -30,8 +34,8 @@ $ npm install && npm run dev
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/63I7wPt.png)
+![](https://i.imgur.com/DF52mfB.png)
 > 透過 Discord 帳戶登入，讓你使用 Discord 帳戶資訊登入或註冊該網站
 
-![](https://i.imgur.com/T1D6djR.png)
+![](https://i.imgur.com/h7wBA3h.png)
 > 將你的 Discord 帳戶連結到網站帳戶
